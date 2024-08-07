@@ -631,8 +631,11 @@ body {
 				visibility: visible;
 			}
 			&-icon {
-				right: 208px;
-				font-size: 275px;
+				bottom: 249px;
+				transform: rotate(-63deg);
+				/* top: 0; */
+				right: 353px;
+				font-size: 406px;
 			}
 			&-icon-small {
 				right: 500px;
@@ -655,14 +658,24 @@ body {
 			font-size: 1.4rem;
 		}
 		&__title {
+			margin-top: -1em;
 			text-transform: uppercase;
 			font-weight: 800;
 			color: $mainColor;
-			font-size: 2.5rem;
+			font-size: 10rem;
+			span{
+				z-index: 1;
+				position: absolute;
+				margin-left: -2.3em;
+				font-size: 24rem;
+				color: hsla(0, 0%, 100%, .28);
+			}
 			&-cd {
+				margin-top: 2em;
 				text-transform: uppercase;
-				font-size: 2.5rem;
+				font-size: 5rem;
 				font-weight: 700;
+				margin-bottom: 1em;
 
 				&-name {
 					font-family: 'Dynalight', cursive;
