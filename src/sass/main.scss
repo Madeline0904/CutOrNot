@@ -34,7 +34,7 @@ body {
 	}
 
 	&__img {
-		width: 50%;
+		
 		&-main {
 			position: relative;
 			margin-top: 5em;
@@ -53,9 +53,9 @@ body {
 			bottom: 1em;
 			right: 1.5em;
 			height: 50px;
-			font-size: 10rem;
+			font-size: 30rem;
 			color: #40454164;
-			animation: scissors-rotate-right 55s infinite linear;
+			/*animation: scissors-rotate-right 55s infinite linear;*/
 		}
 		&-icon-small {
 			visibility: hidden;
@@ -618,10 +618,12 @@ body {
 				display: none;
 			}
 			&-main-big {
-				position: relative;
-				display: flex;
-				width: 80%;
-				height: auto;
+				max-width: 573px;
+        min-width: 541px;
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: auto;
 				
 			}
 			&-icon,
@@ -642,7 +644,7 @@ body {
 			font-family: 'Open Sans', sans-serif;
 			display: flex;
 			flex-direction: column;
-			width: 30%;
+			width: 38%;
 			text-align: center;
 			padding: 3em;
 			margin: 1em;
@@ -691,6 +693,10 @@ body {
 			}
 		}
 	}
+	
+}
+
+@media(min-width: 1200px){
 	.navbar {
 		&__container {
 			position: absolute;
