@@ -3,5 +3,4 @@ main.css.map
 gulpfile.js
 package.json
 package-lock.json
-src
-dist
+
