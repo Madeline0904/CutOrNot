@@ -23,23 +23,22 @@ body {
 //header
 .section-title {
 	position: fixed;
-    margin-top: 265px;
-    margin-left: -338px;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    transform: rotate(-90deg);
+	margin-top: 265px;
+	margin-left: -338px;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	transform: rotate(-90deg);
 
 	&__main {
-	    margin-left: -225px;
-    text-transform: uppercase;
-    margin-bottom: -136px;
-    font-weight: 700;
-    font-size: 21rem;
-    letter-spacing: 2px;
-    color: rgba(57, 65, 60, .559);
+		margin-left: -225px;
+		text-transform: uppercase;
+		margin-bottom: -136px;
+		font-weight: 700;
+		font-size: 21rem;
+		letter-spacing: 2px;
+		color: rgba(57, 65, 60, 0.559);
 	}
-	
 }
 .hero {
 	&__bg {
@@ -47,7 +46,6 @@ body {
 		display: flex;
 		align-items: center;
 		flex-direction: column;
-		height: 100vh;
 		width: 100%;
 		background-color: $heroBg;
 	}
@@ -361,8 +359,6 @@ body {
 		height: 100%;
 	}
 
-	
-
 	&__card {
 		margin: 1em;
 		position: relative;
@@ -607,9 +603,6 @@ body {
 			}
 		}
 	}
-	
-
-
 }
 
 @media (min-width: 992px) {
@@ -717,7 +710,6 @@ body {
 			}
 		}
 	}
-	
 
 	.offer {
 		margin-top: 15em;
@@ -881,7 +873,7 @@ body {
 		}
 	}
 }
- @media(min-width:1350px){
+@media (min-width: 1350px) {
 	.navbar {
 		&__container {
 			position: fixed;
@@ -970,15 +962,15 @@ body {
 		margin-left: 0;
 		margin-top: 0;
 		transform: rotate(0);
-	
+
 		&__main {
 			text-transform: uppercase;
-        margin-top: -83px;
-        margin-left: -.1em;
-        font-weight: 700;
-        font-size: 30rem;
-        letter-spacing: 2px;
-        color: rgba(57, 65, 60, .559);
+			margin-top: -83px;
+			margin-left: -0.1em;
+			font-weight: 700;
+			font-size: 30rem;
+			letter-spacing: 2px;
+			color: rgba(57, 65, 60, 0.559);
 		}
 		&__underline {
 			margin-top: 6em;
@@ -987,4 +979,4 @@ body {
 			background-color: $mainColor;
 		}
 	}
- }
+}
