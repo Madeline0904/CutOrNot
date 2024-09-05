@@ -5,7 +5,7 @@ const firstLine = document.querySelector('.navbar__btn__bars-firstLine')
 const secondLine = document.querySelector('.navbar__btn__bars-secondLine')
 const allNavLinks = document.querySelectorAll('.nav-link')
 const navHoverLink = document.querySelector('.navbar__nav-hover-link')
-const body=document.querySelector('body')
+const body = document.querySelector('body')
 
 allNavLinks.forEach(i => {
 	i.addEventListener('mouseover', e => {
@@ -30,14 +30,14 @@ allNavLinks.forEach(i => {
 const handleNav = () => {
 	firstLine.classList.toggle('firsLine-rotate')
 	secondLine.classList.toggle('secondLine-rotate')
+	firstLine.classList.toggle('navbarLinesColor')
+	secondLine.classList.toggle('navbarLinesColor')
 	nav.classList.toggle('navbar__container--active')
-	
-body.classList.toggle('overflow')
+
+	body.classList.toggle('overflow')
 	allNavItems.forEach(item => {
 		item.addEventListener('click', () => {
 			nav.classList.remove('navbar__container--active')
-			
-			
 		})
 	})
 
