@@ -16,7 +16,7 @@ html {
 body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.6rem;
-	background-color: $heroBg;
+	background-color: $secondColor;
 	overflow-x: hidden;
 }
 
@@ -29,7 +29,7 @@ body {
 		align-items: center;
 		flex-direction: column;
 		width: 100%;
-		background-color: $heroBg;
+		background-color: $secondColor;
 	}
 
 	&__img {
@@ -44,26 +44,7 @@ body {
 		&-main-big {
 			display: none;
 		}
-		&-icon {
-			visibility: hidden;
-			position: absolute;
-			bottom: 1em;
-			right: 1.5em;
-			height: 50px;
-			font-size: 30rem;
-			color: #40454164;
-			/*animation: scissors-rotate-right 55s infinite linear;*/
-		}
-		&-icon-small {
-			visibility: hidden;
-			position: absolute;
-			bottom: 3em;
-			right: 10em;
-			height: 10px;
-			font-size: 4rem;
-			color: #40454164;
-			animation: scissors-rotate-left 55s infinite linear;
-		}
+	
 	}
 
 	&__text-box {
@@ -73,7 +54,7 @@ body {
 		text-align: center;
 		width: 60%;
 		padding: 2em;
-		color: #fff;
+		color: $heroBg;
 	}
 	&__text {
 		line-height: 1.5em;
@@ -82,21 +63,19 @@ body {
 	&__title {
 		text-transform: uppercase;
 		font-weight: 800;
-		color: $mainColor;
 		font-size: 3.2rem;
 		span {
-			color: $secondColor;
+			color: $heroBg;
 		}
 		&-cd {
 			text-transform: uppercase;
 			font-size: 3.2rem;
 			font-weight: 700;
-			span {
-				color: $mainColor;
-			}
+			
 
 			&-name {
 				text-transform: uppercase;
+				color: $heroBg;
 				margin-bottom: 1em;
 				font-size: 3.2rem;
 				font-style: italic;
@@ -593,18 +572,7 @@ body {
 
 			overflow: hidden;
 
-			&::before {
-				content: '';
-				position: absolute;
-				top: -3em;
-				left: -2em;
-				height: 200%;
-				width: 30%;
-				border: 2px solid $heroBg;
-
-				background-image: linear-gradient(147deg, #0f4a29 0%, #000000 74%);
-				transform: rotate(-10deg);
-			}
+			
 		}
 
 		&__img {
@@ -617,6 +585,7 @@ body {
 			&-main-big {
 				max-width: 573px;
 				min-width: 541px;
+			
 				position: relative;
 				display: flex;
 				width: 100%;
@@ -658,7 +627,7 @@ body {
 			margin-left: -3em;
 			text-transform: uppercase;
 			font-weight: 800;
-			color: $mainColor;
+			color: $heroBg;
 			font-size: 10rem;
 			span {
 				z-index: 1;
@@ -666,12 +635,13 @@ body {
 				margin-left: -1.95em;
 				margin-top: 0.1em;
 				font-size: 24rem;
-				color: hsla(0, 0%, 100%, 0.28);
+				color: $heroBg;
 			}
 			&-cd {
 				margin-top: 9.5em;
 				margin-left: 37em;
 				text-transform: uppercase;
+				color: $heroBg;
 				font-size: 1.5rem;
 				font-weight: 700;
 				margin-bottom: 1em;
