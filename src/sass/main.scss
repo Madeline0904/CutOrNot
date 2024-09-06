@@ -23,7 +23,8 @@ body {
 //hero-section
 
 .hero {
-	height: 100vh;
+	height: 800px;
+	overflow: hidden;
 	&__bg {
 		position: relative;
 		display: flex;
@@ -52,7 +53,6 @@ body {
 		display: flex;
 		flex-direction: column;
 		text-align: center;
-		width: 60%;
 		padding: 2em;
 		color: $mainColor;
 	}
@@ -61,18 +61,18 @@ body {
 		
 		text-transform: uppercase;
 		font-weight: 800;
-		font-size: 3.2rem;
+		font-size: 8.2rem;
 		span {
 			color: $heroBg;
 			margin-left: -2.5px;
 		}
 		&-cd {
 			text-transform: uppercase;
-			font-size: 3.2rem;
+			font-size: 2.2rem;
 			font-weight: 700;
 
 			&-name {
-				text-transform: uppercase;
+				font-family: 'Dynalight', cursive;
 				color: $heroBg;
 				margin-bottom: 1em;
 				font-size: 3.2rem;
@@ -86,7 +86,7 @@ body {
 		&-one {
 			position: relative;
 			margin: 1em auto;
-			width: 85%;
+			width: 170px;
 			height: 2em;
 			transition: all 0.3s;
 			&::after {
@@ -146,7 +146,7 @@ body {
 		&-two {
 			position: relative;
 			margin: 2em auto;
-			width: 100%;
+			width: 300px;
 			height: 3.5em;
 			transition: all 0.3s;
 
@@ -203,6 +203,7 @@ body {
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%, -50%);
+				font-size: 1.1rem;
 				letter-spacing: 1px;
 				font-weight: 400;
 				z-index: 1;
@@ -505,62 +506,19 @@ body {
 //media
 
 @media (max-width: 500px) {
-	.wrapper {
-		height: 100%;
+	.hero{
+		&__title{
+			font-size: 3rem;
+			&-cd{
+				font-size: 1.6rem;
+			}
+		}
+		
 	}
 }
 
-@media (max-width: 650px) {
-	.hero {
-		&__button {
-			&-box {
-				&-one {
-					width: 81%;
-				}
-				&-two {
-					width: 80%;
-					&-signup {
-						font-size: 1.2rem;
-					}
-				}
-			}
-		}
-	}
-}
-@media (min-width: 650px) {
-	.hero {
-		&__button {
-			&-box {
-				&-one {
-					width: 50%;
-				}
-				&-two {
-					width: 80%;
-					&-signup {
-						font-size: 1.2rem;
-					}
-				}
-			}
-		}
-	}
-}
-@media (min-width: 768px) {
-	.hero {
-		&__button {
-			&-box {
-				&-one {
-					width: 170px;
-				}
-				&-two {
-					width: 300px;
-					&-signup {
-						font-size: 1.2rem;
-					}
-				}
-			}
-		}
-	}
-}
+
+
 
 @media (min-width: 992px) {
 	.hero {
@@ -584,6 +542,7 @@ body {
 			&-main-big {
 				position: relative;
 				display: flex;
+				margin-left: 3em;
 				max-width: 436px;
 				height: auto;
 				border: 14px solid $mainColor;
@@ -602,29 +561,29 @@ body {
 			flex-direction: column;
 			align-items: flex-start;
 			margin-top: 0.2em;
-			margin-left: 0.5em;
+			margin-left: 0.2em;
 			text-transform: uppercase;
 			font-weight: 800;
 			font-size: 10rem;
 			
 
 			span {
-				font-size: 18rem;
+				font-size: 15rem;
 				margin-top: -0.5em;
 				margin-left: -0.2em;
 			}
 
 			&-cd {
 				margin-top: -3.5em;
-				margin-left: 30.5em;
+				margin-left: 33.8em;
 				text-transform: uppercase;
 				color: $heroBg;
-				font-size: 1.5rem;
+				font-size: 1.1rem;
 				font-weight: 700;
 				margin-bottom: 1em;
 
 				&-name {
-					font-family: 'Dynalight', cursive;
+					
 					text-transform: none;
 					margin-bottom: 0.5em;
 					margin: 1em auto;
@@ -734,5 +693,22 @@ body {
 
 	.nav-items-animationIcon {
 		animation: navItemsAnimationIcon 0.5s both;
+	}
+
+	
+}
+
+@media(min-width:1500px){
+	.hero{
+		&__title{
+			font-size: 10rem;
+			span{
+				font-size: 22rem;
+			}
+			&-cd{
+				font-size: 2rem;
+				margin-left: 24.8em;
+			}
+		}
 	}
 }
