@@ -36,6 +36,8 @@ body {
 	}
 
 	&__img {
+		display: flex;
+		position: relative;
 		&-main {
 			position: relative;
 			margin-top: 5em;
@@ -515,6 +517,9 @@ body {
 //media
 
 @media (max-width: 500px) {
+	.text{
+		display: none;
+	}
 	.hero{
 		&__title{
 			font-size: 3rem;
@@ -526,6 +531,11 @@ body {
 	}
 }
 
+@media (max-width: 992px){
+	.text{
+		display: none;
+	}
+}
 
 
 
@@ -542,20 +552,69 @@ body {
 		}
 
 		&__img {
+			position: relative;
 			display: flex;
-			z-index: 1;
+			text-align: center;
+			background-image: url('../img/heroImgMid.jpeg');
+			background-size: cover;
+			border: 14px solid $mainColor;
+			width: 480px;
+			height: 717px;
+&-btn{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background: none;
+	padding: 10px;
+	border: none;
+	font-size: 36px;
+	color: $secondColor;
+	text-shadow: 2px 2px 5px rgb(0,0,0);
+	cursor: crosshair;
+	z-index: 10;
 
+&:hover~.text-cd{
+	clip-path: circle(120% at 50% 90%);
+}
+}
+
+.text{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.text-cd{
+	position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 80px 30px;
+    background-color: rgba(0, 0, 0, .85);
+    color: #fff;
+	clip-path: circle(0 at 50% 90%);
+	transition: clip-path .8s;
+	h2{
+		font-size: 3rem;
+		text-transform: uppercase;
+		margin-bottom: 0.5em;
+		
+	}
+	p{
+		font-size: 1.7rem;
+		line-height: 1.7em;
+
+	}
+}
 			&-main {
 				display: none;
 			}
-			&-main-big {
-				position: relative;
-				display: flex;
-				margin-left: 3em;
-				max-width: 436px;
-				height: auto;
-				border: 14px solid $mainColor;
-			}
+		
 		}
 		&__text-box {
 			font-family: 'Open Sans', sans-serif;
@@ -604,6 +663,12 @@ body {
 			}
 		}
 		&__button-box {
+			&-one{
+				display: none;
+			}
+			&-two{
+				margin-top: -1.3em;
+			}
 			&-aboutme {
 				font-size: 1.2rem;
 				font-weight: 400;
