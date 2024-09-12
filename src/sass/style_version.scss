@@ -375,6 +375,18 @@ body {
 			margin-top: -2.2em;
 		}
 		&__box {
+			.two{
+				background-image: url('../img/color_small.jpg');
+			}
+			.three{
+				background-image: url('../img/care_small.jpg');
+			}
+			.four{
+				background-image: url('../img/modeling_small.jpg');
+			}
+			.five{
+				background-image: url('../img/exertion_small.jpg');
+			}
 			&__text {
 				&-title {
 					margin-top: 3em;
@@ -408,6 +420,9 @@ body {
 			margin-top: -3.2em;
 		}
 		&__box {
+			.four{
+				background-position: top;
+			}
 			&__text {
 				&-title {
 					margin-top: 3em;
