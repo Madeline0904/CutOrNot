@@ -1,7 +1,6 @@
 @use './colors' as *;
 @use './components' as *;
 
-
 *,
 *::before,
 *::after {
@@ -30,7 +29,7 @@ body {
 
 	&__main {
 		text-transform: uppercase;
-        margin-left: -0.1em;
+		margin-left: -0.1em;
 		font-weight: 700;
 		font-size: 30rem;
 		letter-spacing: 2px;
@@ -118,7 +117,7 @@ body {
 			}
 		}
 	}
-    &__nav {
+	&__nav {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
@@ -158,7 +157,6 @@ body {
 			}
 		}
 	}
-	
 }
 
 @keyframes navItemsAnimation {
@@ -180,40 +178,60 @@ body {
 //offer
 
 .offers {
-	&__cards {
-		margin-top: -10em;
+	&__cards:first-child {
+		margin-top: -5.2em;
 	}
 	&__box {
 		display: flex;
 		justify-content: center;
-		margin-top: 5em;
-        background: #044a42; 
+		background: #044a42;
 		width: 100%;
+		height: 800px;
+
 		&-img {
+			height: 800px;
 			width: 50%;
-			height: auto;
-		
+			background-position: center;
+			background-size: cover;
+		}
+		.one {
+			background-image: url('../img/cutting.jpg');
+		}
+		.two {
+			background-image: url('../img/color.jpg');
+			background-position: top;
+		}
+		.three {
+			background-image: url('../img/care.jpg');
+		}
+		.four {
+			background-image: url('../img/modeling.jpg');
+		}
+		.five {
+			background-image: url('../img/exertion.jpg');
 		}
 
 		&__text {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+
 			width: 50%;
 			&-title {
-				margin-top: 2em;
+				margin-top: 1em;
 				color: $secondColor;
-				font-size: 7rem;
+				font-size: 4rem;
 				text-transform: uppercase;
 				font-weight: 400;
 			}
+
 			&-list {
-				margin-top: 7em;
+				margin-top: 3.7em;
 
 				&-item {
 					color: $secondColor;
 					list-style: none;
-                    font-size: 2rem;
+					font-size: 2rem;
 					margin-bottom: 1em;
 					i {
 						margin-right: 1em;
@@ -221,29 +239,28 @@ body {
 				}
 			}
 			&-booksy {
-				margin-top: 10em;
+				margin-top: 2em;
 				margin-bottom: 1em;
-                text-transform: uppercase;
-                font-weight: 600;
-                font-size: 2rem;
+				text-transform: uppercase;
+				font-weight: 600;
+				font-size: 2rem;
 				color: $secondColor;
 			}
-            a{
-                width: 70%;
-            }
+			a {
+				width: 70%;
+			}
 			&-button {
 				position: relative;
-				top: 5em;
+				top: 2em;
 				width: 100%;
 				padding: 1.5em;
-                
-				background-color:rgba(27, 39, 35, 0.516);
+				background-color: rgba(27, 39, 35, 0.516);
 				border: 1px solid $secondColor;
 				color: $secondColor;
 				text-transform: uppercase;
 				font-size: 1.7rem;
 				font-weight: 600;
-                letter-spacing: 2px;
+				letter-spacing: 2px;
 				transition: color 0.3s;
 
 				cursor: pointer;
@@ -255,7 +272,6 @@ body {
 					left: 0;
 					width: 100%;
 					height: 100%;
-					
 
 					transition: all 0.3s;
 				}
@@ -273,7 +289,7 @@ body {
 					left: 0;
 					width: 100%;
 					height: 100%;
-					
+
 					z-index: 1;
 					opacity: 0;
 					transition: all 0.3s;
@@ -289,13 +305,164 @@ body {
 		}
 	}
 }
-/*.kenburns-top {
-	-webkit-animation: kenburns-top 5s ease-out both;
-	        animation: kenburns-top 5s ease-out both;
-}*/
 
-@media (min-width: 992px){
-    .navbar__btn {
-        display: flex;
-    }
+//media
+@media (max-width: 576px) {
+	.section-title {
+		&__main {
+			margin-top: 0.7em;
+			font-size: 8.5rem;
+		}
+	}
+	.offers {
+		&__cards:first-child {
+			margin-top: -1.2em;
+		}
+		&__box {
+			height: 600px;
+			&-img {
+				height: 600px;
+			}
+			.two{
+				background-image: url('../img/color_small.jpg');
+			}
+			.three{
+				background-image: url('../img/care_small.jpg');
+			}
+			.four{
+				background-image: url('../img/modeling_small.jpg');
+			}
+			.five{
+				background-image: url('../img/exertion_small.jpg');
+			}
+			&__text {
+				&-title {
+					text-align: center;
+					margin-top: 3em;
+					font-size: 1.5rem;
+				}
+				&-list {
+					width: 78%;
+					&-item {
+						font-size: 1.2rem;
+					}
+				}
+				&-booksy {
+					width: 78%;
+					text-align: center;
+					font-size: 1.2rem;
+				}
+				&-button {
+					padding: 1em;
+					font-size: 1rem;
+				}
+			}
+		}
+	}
+	.four {
+		background-position: center;
+		background-image: url('../img/modeling_small.jpg');
+	}
+}
+@media (min-width: 576px) {
+	.section-title {
+		&__main {
+			font-size: 13.5rem;
+		}
+	}
+	.offers {
+		&__cards:first-child {
+			margin-top: -2.2em;
+		}
+		&__box {
+			&__text {
+				&-title {
+					margin-top: 3em;
+					font-size: 2rem;
+				}
+				&-list {
+					width: 75%;
+					&-item {
+						font-size: 1.1rem;
+					}
+				}
+				&-booksy {
+					font-size: 1.2rem;
+				}
+				&-button {
+					padding: 1em;
+					font-size: 1.2rem;
+				}
+			}
+		}
+	}
+}
+@media (min-width: 768px) {
+	.section-title {
+		&__main {
+			font-size: 16.8rem;
+		}
+	}
+	.offers {
+		&__cards:first-child {
+			margin-top: -3.2em;
+		}
+		&__box {
+			&__text {
+				&-title {
+					margin-top: 3em;
+					font-size: 2.3rem;
+				}
+				&-list {
+					margin-left: 0.5em;
+					&-item {
+						font-size: 1.4rem;
+					}
+				}
+				&-booksy {
+					font-size: 1.2rem;
+				}
+				&-button {
+					padding: 1em;
+					font-size: 1.2rem;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.navbar__btn {
+		display: flex;
+	}
+	.section-title {
+		&__main {
+			font-size: 23.5rem;
+		}
+	}
+	.offers {
+		&__cards:first-child {
+			margin-top: -4.2em;
+		}
+		&__box {
+			&__text {
+				&-title {
+					margin-top: 3em;
+					font-size: 3rem;
+				}
+				&-list {
+					&-item {
+						font-size: 1.5rem;
+					}
+				}
+				&-booksy {
+					font-size: 1.5rem;
+				}
+				&-button {
+					padding: 1em;
+					font-size: 1.5rem;
+				}
+			}
+		}
+	}
 }
