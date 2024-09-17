@@ -208,7 +208,7 @@ body {
 			background-image: url('../img/modeling.jpg');
 		}
 		.five {
-			background-image: url('../img/exertion.jpg');
+			background-image: url('../img/cares.jpg');
 		}
 
 		&__text {
@@ -333,7 +333,7 @@ body {
 				background-image: url('../img/modeling_small.jpg');
 			}
 			.five{
-				background-image: url('../img/exertion_small.jpg');
+				background-image: url('../img/cares.jpg');
 			}
 			&__text {
 				&-title {
@@ -376,7 +376,7 @@ body {
 		}
 		&__box {
 			.two{
-				background-image: url('../img/color_small.jpg');
+				background-image: url('../img/color.jpg');
 			}
 			.three{
 				background-image: url('../img/care_small.jpg');
@@ -385,7 +385,13 @@ body {
 				background-image: url('../img/modeling_small.jpg');
 			}
 			.five{
-				background-image: url('../img/exertion_small.jpg');
+				background-image: url('../img/cares.jpg');
+			}
+			.five-img{
+				width: 100%;
+				height: auto;
+				max-height: 1000px;
+				
 			}
 			&__text {
 				&-title {
@@ -478,6 +484,20 @@ body {
 					font-size: 1.5rem;
 				}
 			}
+			.two{
+				background-size:cover;
+				background-repeat: no-repeat;
+			}
+			.three{
+				background-size:cover;
+				
+			}
+			
 		}
+	}
+}
+@media(min-width: 1300px){
+	.five{
+		background-position: top;
 	}
 }
