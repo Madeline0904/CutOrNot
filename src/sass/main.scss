@@ -523,6 +523,44 @@ i .fa-solid,.fa-chevron-down,.bounce-top{
 }
 
 //media
+@media(max-width:390px){
+	.hero{
+		&__title{
+			&-img{
+				display: none;
+			}
+			
+		}
+	}
+}
+@media(min-width:391px){
+	.hero{
+		&__title{
+			font-size: 3rem;
+			&-img{
+				display: block;
+			}
+			&-cd{
+				&-name{
+					display: none;
+				}
+			}
+		}
+		
+	}
+}
+@media(min-width:500px){
+	.hero{
+		&__title{
+			font-size: 3rem;
+			&-img{
+				display: block;
+			}
+			
+		}
+		
+	}
+}
 
 @media (max-width: 500px) {
 	.text{
@@ -531,9 +569,7 @@ i .fa-solid,.fa-chevron-down,.bounce-top{
 	.hero{
 		&__title{
 			font-size: 3rem;
-			&-cd{
-				font-size: 1.6rem;
-			}
+	
 		}
 		
 	}
