@@ -521,17 +521,17 @@ i .fa-solid,
 	}
 }
 //portfolio
-.portfolio{
+.portfolio {
 	background-color: $mainColor;
 }
-.second-section{
+.second-section {
 	color: rgba(14, 15, 14, 0.559);
 	font-size: 23rem;
 }
 
 .cards-box {
-width: 1000px;
-	.cards{
+	width: 1000px;
+	.cards {
 		display: grid;
 		grid-template-columns: repeat(5, 1fr);
 		grid-template-rows: repeat(5, 1fr);
@@ -544,39 +544,38 @@ width: 1000px;
 			perspective: 800px;
 			transition: all 0.8s;
 			cursor: pointer;
-	
-			&-after,&-before {
+
+			&-after,
+			&-before {
 				position: absolute;
 				height: 100%;
 				width: 100%;
 				background-size: cover;
 				background-position: center;
-				
-				
 			}
-			&-after{
+			&-after {
 				background-image: url('../img/after1.jpg');
 				z-index: 1;
 			}
-			&-before{
-	background-image: url('../img/before1.jpg');
+			&-before {
+				background-image: url('../img/before1.jpg');
 			}
-			.after-two-img{
+			.after-two-img {
 				background-image: url('../img/after2.jpg');
 			}
-			.before-two-img{
+			.before-two-img {
 				background-image: url('../img/before2.jpg');
 			}
-			.after-three-img{
+			.after-three-img {
 				background-image: url('../img/after3.jpg');
 			}
-			.before-three-img{
+			.before-three-img {
 				background-image: url('../img/before3.jpg');
 			}
-			.after-four-img{
+			.after-four-img {
 				background-image: url('../img/after4.jpg');
 			}
-			.before-four-img{
+			.before-four-img {
 				background-image: url('../img/before4.jpg');
 			}
 			&:hover .cards__card-after,
@@ -586,17 +585,16 @@ width: 1000px;
 				animation: up 0.8s;
 			}
 			&:hover .cards__card-before,
-			&:active .cards__card-before{
+			&:active .cards__card-before {
 				animation: down 0.8s;
 			}
-			
 		}
 	}
-	
-	.three{
+
+	.three {
 		grid-row-start: 2;
 	}
-	.four{
+	.four {
 		grid-row-start: 2;
 	}
 }
