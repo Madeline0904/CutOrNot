@@ -206,9 +206,10 @@ body {
   font-weight: 300;
 }
 .hero__title-img {
-  margin: 1em auto;
+  margin: 0 auto;
   border-radius: 50%;
-  width: 200px;
+  width: 300px;
+  height: 300px;
 }
 .hero__button-box {
   width: 100%;
@@ -704,6 +705,10 @@ i .fa-solid,
     font-size: 3rem;
   }
   .hero__title-img {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    height: 200px;
+    width: 200px;
     display: block;
   }
   .hero__title-cd-name {
@@ -806,6 +811,10 @@ i .fa-solid,
   .hero__img-main {
     display: none;
   }
+  .hero__title-img {
+    height: 300px;
+    width: 300px;
+  }
   .hero__text-box {
     font-family: "Open Sans", sans-serif;
     display: flex;
@@ -846,7 +855,7 @@ i .fa-solid,
     font-weight: 300;
   }
   .hero__title-img {
-    margin-top: 3.5em;
+    margin-top: 0.5em;
   }
   .hero__button-box-one {
     display: none;
