@@ -21,7 +21,9 @@ body {
 }
 
 //hero-section
-
+.hero-section {
+	height: 100vh;
+}
 .hero {
 	height: 100%;
 	overflow: hidden;
@@ -223,9 +225,13 @@ body {
 	margin-top: -2em;
 	color: $heroBg;
 }
+#portfolio {
+	position: relative;
+}
 i .fa-solid,
 .fa-chevron-down,
 .bounce-top {
+	position: absolute;
 	color: $heroBg;
 	padding: 1em;
 }
@@ -523,24 +529,25 @@ i .fa-solid,
 //portfolio
 .portfolio {
 	background-color: $mainColor;
+	overflow-x: hidden;
 }
 .second-section {
 	color: rgba(14, 15, 14, 0.559);
-	font-size: 23rem;
+	font-size: 5.6rem;
 }
 
 .cards-box {
-	width: 1000px;
+	margin-top: 5em;
 	.cards {
-		display: grid;
-		grid-template-columns: repeat(5, 1fr);
-		grid-template-rows: repeat(5, 1fr);
-		gap: 50px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 		&__card {
 			margin: 1em;
 			position: relative;
-			width: 471px;
-			height: 520px;
+			width: 365px;
+			height: 365px;
 			perspective: 800px;
 			transition: all 0.8s;
 			cursor: pointer;
@@ -589,13 +596,6 @@ i .fa-solid,
 				animation: down 0.8s;
 			}
 		}
-	}
-
-	.three {
-		grid-row-start: 2;
-	}
-	.four {
-		grid-row-start: 2;
 	}
 }
 
@@ -795,6 +795,22 @@ i .fa-solid,
 			}
 		}
 	}
+	.second-section {
+		font-size: 15rem;
+	}
+	.cards-box {
+		.cards {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(6, 1fr);
+			gap: 50px;
+			&__card {
+				width: 420px;
+				height: 420px;
+			}
+		}
+		
+	}
 }
 
 @media (min-width: 1200px) {
@@ -878,6 +894,19 @@ i .fa-solid,
 
 	.nav-items-animationIcon {
 		animation: navItemsAnimationIcon 0.5s both;
+	}
+	.second-section {
+		font-size: 19rem;
+	}
+	.cards-box {
+		.cards {
+			
+			&__card {
+				width: 520px;
+				height: 520px;
+			}
+		}
+		
 	}
 }
 
