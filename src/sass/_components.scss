@@ -1,15 +1,21 @@
-// .wrapper {
-// 	display: flex;
-// 	justify-content: center;
-// 	align-items: center;
-// 	flex-direction: column;
-// 	margin: 0 auto;
-// 	height: 100%;
-// 	width: 100%;
-// 	max-width:2000px;
+.section-title {
+	&__main {
+		text-transform: uppercase;
+		margin-left: -0.1em;
+		font-weight: 700;
+		font-size: 30rem;
+		letter-spacing: 2px;
+		color: rgba(57, 65, 60, 0.559);
+	}
 	
-// }
+}
+.wrapper{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 
+}
 @keyframes scissors-rotate-right{
 	from{
 		transform: rotate(0);

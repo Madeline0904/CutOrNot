@@ -23,10 +23,6 @@ body {
 //header
 
 .section-title {
-	display: flex;
-	flex-direction: column;
-	justify-content: end;
-
 	&__main {
 		text-transform: uppercase;
 		margin-left: -0.1em;
@@ -35,11 +31,7 @@ body {
 		letter-spacing: 2px;
 		color: rgba(57, 65, 60, 0.559);
 	}
-	&__underline {
-		height: 5px;
-		width: 1000px;
-		background-color: $mainColor;
-	}
+	
 }
 
 //nav

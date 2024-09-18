@@ -32,7 +32,6 @@ body {
 		flex-direction: column;
 		width: 100%;
 		height: 100vh;
-	
 	}
 
 	&__img {
@@ -61,7 +60,6 @@ body {
 	}
 
 	&__title {
-		
 		text-transform: uppercase;
 		font-weight: 800;
 		font-size: 8.2rem;
@@ -82,7 +80,7 @@ body {
 				font-weight: 300;
 			}
 		}
-		&-img{
+		&-img {
 			margin: 1em auto;
 			border-radius: 50%;
 			width: 200px;
@@ -133,7 +131,7 @@ body {
 			.aboutme-span {
 				position: absolute;
 				font-family: 'Montserrat', sans-serif;
-	
+
 				font-size: 1.4rem;
 				font-weight: 400;
 				z-index: 1;
@@ -217,19 +215,20 @@ body {
 			}
 		}
 	}
-
 }
-.hero-arrow{
+.hero-arrow {
 	display: flex;
 	justify-content: center;
 	font-size: 2.2rem;
-	margin-top:-2em ;
+	margin-top: -2em;
 	color: $heroBg;
 }
-i .fa-solid,.fa-chevron-down,.bounce-top{
+i .fa-solid,
+.fa-chevron-down,
+.bounce-top {
 	color: $heroBg;
+	padding: 1em;
 }
-
 
 //nav
 
@@ -521,67 +520,139 @@ i .fa-solid,.fa-chevron-down,.bounce-top{
 		}
 	}
 }
+//portfolio
+.portfolio{
+	background-color: $mainColor;
+}
+.second-section{
+	color: rgba(14, 15, 14, 0.559);
+	font-size: 23rem;
+}
 
-//media
-@media(max-width:390px){
-	.hero{
-		&__title{
-			&-img{
-				display: none;
+.cards-box {
+width: 1000px;
+	.cards{
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-template-rows: repeat(5, 1fr);
+		gap: 50px;
+		&__card {
+			margin: 1em;
+			position: relative;
+			width: 471px;
+			height: 520px;
+			perspective: 800px;
+			transition: all 0.8s;
+			cursor: pointer;
+	
+			&-after,&-before {
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				background-size: cover;
+				background-position: center;
+				
+				
+			}
+			&-after{
+				background-image: url('/dist/img/after1.jpg');
+				z-index: 1;
+			}
+			&-before{
+	background-image: url('/dist/img/before1.jpg');
+			}
+			.after-two-img{
+				background-image: url('/dist/img/after2.jpg');
+			}
+			.before-two-img{
+				background-image: url('/dist/img/before2.jpg');
+			}
+			.after-three-img{
+				background-image: url('/dist/img/after3.jpg');
+			}
+			.before-three-img{
+				background-image: url('/dist/img/before3.jpg');
+			}
+			.after-four-img{
+				background-image: url('/dist/img/after4.jpg');
+			}
+			.before-four-img{
+				background-image: url('/dist/img/before4.jpg');
+			}
+			&:hover .cards__card-after,
+			&:active .cards__card-after {
+				transform: rotate(0);
+				opacity: 0;
+				animation: up 0.8s;
+			}
+			&:hover .cards__card-before,
+			&:active .cards__card-before{
+				animation: down 0.8s;
 			}
 			
 		}
 	}
+	
+	.three{
+		grid-row-start: 2;
+	}
+	.four{
+		grid-row-start: 2;
+	}
 }
-@media(min-width:391px){
-	.hero{
-		&__title{
+
+//media
+@media (max-width: 390px) {
+	.hero {
+		&__title {
+			&-img {
+				display: none;
+			}
+		}
+	}
+}
+@media (min-width: 391px) {
+	.hero {
+		&__title {
 			font-size: 3rem;
-			&-img{
+			&-img {
 				display: block;
 			}
-			&-cd{
-				&-name{
+			&-cd {
+				&-name {
 					display: none;
 				}
 			}
 		}
-		
 	}
 }
-@media(min-width:500px){
-	.hero{
-		&__title{
+@media (min-width: 500px) {
+	.hero {
+		&__title {
 			font-size: 3rem;
-			&-img{
+			&-img {
 				display: block;
 			}
-			
 		}
-		
 	}
 }
 
 @media (max-width: 500px) {
-	.text{
+	.text {
 		display: none;
 	}
-	.hero{
-		&__title{
+	.hero {
+		&__title {
 			font-size: 3rem;
-	
 		}
-		
 	}
 }
 
-@media (max-width: 992px){
-	.text{
+@media (max-width: 992px) {
+	.text {
 		display: none;
 	}
 }
-
-
 
 @media (min-width: 992px) {
 	.hero {
@@ -604,61 +675,58 @@ i .fa-solid,.fa-chevron-down,.bounce-top{
 			border: 14px solid $mainColor;
 			width: 480px;
 			height: 717px;
-&-btn{
-	position: absolute;
-	top: 10px;
-	right: 10px;
-	background: none;
-	padding: 10px;
-	border: none;
-	font-size: 36px;
-	color: $secondColor;
-	text-shadow: 2px 2px 5px rgb(0,0,0);
-	cursor: crosshair;
-	z-index: 10;
+			&-btn {
+				position: absolute;
+				top: 10px;
+				right: 10px;
+				background: none;
+				padding: 10px;
+				border: none;
+				font-size: 36px;
+				color: $secondColor;
+				text-shadow: 2px 2px 5px rgb(0, 0, 0);
+				cursor: crosshair;
+				z-index: 10;
 
-&:hover~.text-cd{
-	clip-path: circle(120% at 50% 90%);
-}
-}
+				&:hover ~ .text-cd {
+					clip-path: circle(120% at 50% 90%);
+				}
+			}
 
-.text{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-.text-cd{
-	position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 80px 30px;
-    background-color: rgba(0, 0, 0, .85);
-    color: #fff;
-	clip-path: circle(0 at 50% 90%);
-	transition: clip-path .8s;
-	h2{
-		font-size: 3rem;
-		text-transform: uppercase;
-		margin-bottom: 0.5em;
-		
-	}
-	p{
-		font-size: 1.7rem;
-		line-height: 1.7em;
-
-	}
-}
+			.text {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+			.text-cd {
+				position: absolute;
+				width: 100%;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+				padding: 80px 30px;
+				background-color: rgba(0, 0, 0, 0.85);
+				color: #fff;
+				clip-path: circle(0 at 50% 90%);
+				transition: clip-path 0.8s;
+				h2 {
+					font-size: 3rem;
+					text-transform: uppercase;
+					margin-bottom: 0.5em;
+				}
+				p {
+					font-size: 1.7rem;
+					line-height: 1.7em;
+				}
+			}
 			&-main {
 				display: none;
 			}
-		
 		}
 		&__text-box {
 			font-family: 'Open Sans', sans-serif;
@@ -677,7 +745,6 @@ i .fa-solid,.fa-chevron-down,.bounce-top{
 			text-transform: uppercase;
 			font-weight: 800;
 			font-size: 10rem;
-			
 
 			span {
 				font-size: 15rem;
@@ -695,7 +762,6 @@ i .fa-solid,.fa-chevron-down,.bounce-top{
 				margin-bottom: 1em;
 
 				&-name {
-					
 					text-transform: none;
 					margin-bottom: 0.5em;
 					margin: 1em auto;
@@ -704,16 +770,16 @@ i .fa-solid,.fa-chevron-down,.bounce-top{
 					font-weight: 300;
 				}
 			}
-			&-img{
+			&-img {
 				margin-top: 3.5em;
 			}
 		}
-		
+
 		&__button-box {
-			&-one{
+			&-one {
 				display: none;
 			}
-			&-two{
+			&-two {
 				margin-top: 1.3em;
 			}
 			&-aboutme {
@@ -815,18 +881,16 @@ i .fa-solid,.fa-chevron-down,.bounce-top{
 	.nav-items-animationIcon {
 		animation: navItemsAnimationIcon 0.5s both;
 	}
-
-	
 }
 
-@media(min-width:1500px){
-	.hero{
-		&__title{
+@media (min-width: 1500px) {
+	.hero {
+		&__title {
 			font-size: 10rem;
-			span{
+			span {
 				font-size: 22rem;
 			}
-			&-cd{
+			&-cd {
 				font-size: 2rem;
 				margin-left: 24.8em;
 			}
