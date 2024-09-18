@@ -555,29 +555,29 @@ width: 1000px;
 				
 			}
 			&-after{
-				background-image: url('/dist/img/after1.jpg');
+				background-image: url('../img/after1.jpg');
 				z-index: 1;
 			}
 			&-before{
-	background-image: url('/dist/img/before1.jpg');
+	background-image: url('../img/before1.jpg');
 			}
 			.after-two-img{
-				background-image: url('/dist/img/after2.jpg');
+				background-image: url('../img/after2.jpg');
 			}
 			.before-two-img{
-				background-image: url('/dist/img/before2.jpg');
+				background-image: url('../img/before2.jpg');
 			}
 			.after-three-img{
-				background-image: url('/dist/img/after3.jpg');
+				background-image: url('../img/after3.jpg');
 			}
 			.before-three-img{
-				background-image: url('/dist/img/before3.jpg');
+				background-image: url('../img/before3.jpg');
 			}
 			.after-four-img{
-				background-image: url('/dist/img/after4.jpg');
+				background-image: url('../img/after4.jpg');
 			}
 			.before-four-img{
-				background-image: url('/dist/img/before4.jpg');
+				background-image: url('../img/before4.jpg');
 			}
 			&:hover .cards__card-after,
 			&:active .cards__card-after {
