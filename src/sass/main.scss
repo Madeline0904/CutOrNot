@@ -587,6 +587,18 @@ i .fa-solid,
 			.before-four-img {
 				background-image: url('../img/before4.jpg');
 			}
+			.after-five-img {
+				background-image: url('../img/after5.jpg');
+			}
+			.before-five-img {
+				background-image: url('../img/before5.jpg');
+			}
+			.after-six-img {
+				background-image: url('../img/after6.jpg');
+			}
+			.before-six-img {
+				background-image: url('../img/before6.jpg');
+			}
 			&:hover .cards__card-after,
 			&:active .cards__card-after {
 				transform: rotate(0);
@@ -600,6 +612,54 @@ i .fa-solid,
 		}
 	}
 }
+//reviews
+.reviews{
+	padding: 200px;
+
+}
+.swiper{
+	height: 500px;
+	.swiper-slide{
+		color: $secondColor;
+		background-size:cover;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		font-size: 18px;
+		
+	}
+	.one{
+		background-image: url('/dist/img/2.jpg');
+		background-position: bottom;
+	}
+	.two{
+		background-image: url('/dist/img/3.jpg');
+		background-position: bottom;
+	}
+	.three{
+		background-image: url('/dist/img/4.jpg');
+	
+	}
+}
+
+.swiper-slide-box{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 700px;
+}
+.quote{
+	font-size: 3rem;
+	margin-left: -693px;
+	margin-bottom: 1em;
+}
+// .reviews{
+// 	background-image: url('../img/salon.jpeg');
+// 	background-size: cover;
+// 	background-repeat: no-repeat;
+// }
 
 //media
 @media (max-width: 390px) {
@@ -814,7 +874,7 @@ i .fa-solid,
 		.cards {
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
-			grid-template-rows: repeat(6, 1fr);
+			grid-template-rows: repeat(3, 1fr);
 			gap: 50px;
 			&__card {
 				width: 420px;
