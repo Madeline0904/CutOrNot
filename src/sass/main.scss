@@ -615,10 +615,14 @@ i .fa-solid,
 //reviews
 .reviews{
 	padding: 200px;
-
+	background-image: url('/dist/img/4.jpg');
+	background-size: cover;
+	background-attachment: fixed;
 }
 .swiper{
 	height: 500px;
+	
+
 	.swiper-slide{
 		color: $secondColor;
 		background-size:cover;
@@ -628,19 +632,9 @@ i .fa-solid,
 		align-items: center;
 		font-size: 18px;
 		
+		
 	}
-	.one{
-		background-image: url('/dist/img/2.jpg');
-		background-position: bottom;
-	}
-	.two{
-		background-image: url('/dist/img/3.jpg');
-		background-position: bottom;
-	}
-	.three{
-		background-image: url('/dist/img/4.jpg');
 	
-	}
 }
 
 .swiper-slide-box{
@@ -649,11 +643,23 @@ i .fa-solid,
 	justify-content: center;
 	align-items: center;
 	width: 700px;
+	
+	p{
+		line-height: 27px;
+		margin-bottom: 1.5em;
+		
+	}
 }
 .quote{
 	font-size: 3rem;
 	margin-left: -693px;
 	margin-bottom: 1em;
+}
+.swiper-button-next{
+	right: var(--swiper-navigation-sides-offset, -36px);
+}
+.swiper-button-prev{
+	left: var(--swiper-navigation-sides-offset, -36px);
 }
 // .reviews{
 // 	background-image: url('../img/salon.jpeg');

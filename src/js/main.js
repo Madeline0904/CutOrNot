@@ -63,9 +63,24 @@ const handleNavItemsAnimationIcon = () => {
 	})
 }
 
+
+
+
+navBtn.addEventListener('click', handleNav)
+
 const swiper = new Swiper('.swiper', {
 	// Optional parameters
-	
+	effect: "cube",
+	autoplay: { delay: 5000 },
+	loop: true,
+  
+	grabCursor: true,
+	cubeEffect: {
+		shadow: true,
+		slideShadows: true,
+		shadowOffset: 20,
+		shadowScale: 0.94,
+	},
   
 	// Navigation arrows
 	navigation: {
@@ -74,6 +89,3 @@ const swiper = new Swiper('.swiper', {
 	},
   
   });
-
-
-navBtn.addEventListener('click', handleNav)
