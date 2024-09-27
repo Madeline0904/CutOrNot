@@ -4,7 +4,7 @@ const allNavItems = document.querySelectorAll('.navbar__nav-link')
 const firstLine = document.querySelector('.navbar__btn__bars-firstLine')
 const secondLine = document.querySelector('.navbar__btn__bars-secondLine')
 const allNavLinks = document.querySelectorAll('.nav-link')
-const navHoverLink = document.querySelector('.navbar__nav-hover-link')
+const navHoverLink = document.querySelectorAll('.navbar__nav-hover-link')
 const body = document.querySelector('body')
 
 allNavLinks.forEach(i => {
@@ -35,9 +35,25 @@ const handleNav = () => {
 	nav.classList.toggle('navbar__container--active')
 
 	body.classList.toggle('overflow')
-	allNavItems.forEach(item => {
-		item.addEventListener('click', () => {
+	allNavItems.forEach(i => {
+		i.addEventListener('click', () => {
 			nav.classList.remove('navbar__container--active')
+			firstLine.classList.remove('firsLine-rotate')
+			secondLine.classList.remove('secondLine-rotate')
+			firstLine.classList.remove('navbarLinesColor')
+			secondLine.classList.remove('navbarLinesColor')
+			body.classList.remove('overflow')
+		})
+	})
+	navHoverLink.forEach(i => {
+		i.addEventListener('click', () => {
+			console.log(10)
+			nav.classList.remove('navbar__container--active')
+			firstLine.classList.remove('firsLine-rotate')
+			secondLine.classList.remove('secondLine-rotate')
+			firstLine.classList.remove('navbarLinesColor')
+			secondLine.classList.remove('navbarLinesColor')
+			body.classList.remove('overflow')
 		})
 	})
 
@@ -63,8 +79,4 @@ const handleNavItemsAnimationIcon = () => {
 	})
 }
 
-
-
-
 navBtn.addEventListener('click', handleNav)
-
