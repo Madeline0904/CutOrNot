@@ -818,6 +818,10 @@ i .fa-solid,
   display: block;
 }
 
+.pswp-gallery {
+  text-align: center;
+}
+
 @media (max-width: 390px) {
   .hero__title-img {
     display: none;
@@ -1120,6 +1124,9 @@ i .fa-solid,
   .cards-box .cards__card {
     width: 420px;
     height: 420px;
+  }
+  .reviews {
+    padding: 350px;
   }
   .swiper-slide-box p {
     line-height: 29px;

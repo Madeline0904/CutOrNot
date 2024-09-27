@@ -366,6 +366,9 @@ body {
   background-image: url("../img/modeling.jpg");
 }
 .offers__box .five {
+  background-image: url("../img/weeding.jpg");
+}
+.offers__box .six {
   background-image: url("../img/cares.jpg");
 }
 .offers__box__text {
@@ -475,7 +478,7 @@ body {
     background-image: url("../img/modeling_small.jpg");
   }
   .offers__box .five {
-    background-image: url("../img/cares.jpg");
+    background-image: url("../img/weeding.jpg");
   }
   .offers__box__text-title {
     text-align: center;
@@ -519,7 +522,7 @@ body {
     background-image: url("../img/modeling_small.jpg");
   }
   .offers__box .five {
-    background-image: url("../img/cares.jpg");
+    background-image: url("../img/weeding.jpg");
   }
   .offers__box .five-img {
     width: 100%;

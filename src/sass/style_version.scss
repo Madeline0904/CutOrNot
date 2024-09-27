@@ -31,7 +31,6 @@ body {
 		letter-spacing: 2px;
 		color: rgba(57, 65, 60, 0.559);
 	}
-	
 }
 
 //nav
@@ -200,6 +199,9 @@ body {
 			background-image: url('../img/modeling.jpg');
 		}
 		.five {
+			background-image: url('../img/weeding.jpg');
+		}
+		.six {
 			background-image: url('../img/cares.jpg');
 		}
 
@@ -315,17 +317,17 @@ body {
 			&-img {
 				height: 600px;
 			}
-			.two{
+			.two {
 				background-image: url('../img/color_small.jpg');
 			}
-			.three{
+			.three {
 				background-image: url('../img/care_small.jpg');
 			}
-			.four{
+			.four {
 				background-image: url('../img/modeling_small.jpg');
 			}
-			.five{
-				background-image: url('../img/cares.jpg');
+			.five {
+				background-image: url('../img/weeding.jpg');
 			}
 			&__text {
 				&-title {
@@ -367,23 +369,22 @@ body {
 			margin-top: -2.2em;
 		}
 		&__box {
-			.two{
+			.two {
 				background-image: url('../img/color.jpg');
 			}
-			.three{
+			.three {
 				background-image: url('../img/care_small.jpg');
 			}
-			.four{
+			.four {
 				background-image: url('../img/modeling_small.jpg');
 			}
-			.five{
-				background-image: url('../img/cares.jpg');
+			.five {
+				background-image: url('../img/weeding.jpg');
 			}
-			.five-img{
+			.five-img {
 				width: 100%;
 				height: auto;
 				max-height: 1000px;
-				
 			}
 			&__text {
 				&-title {
@@ -418,7 +419,7 @@ body {
 			margin-top: -3.2em;
 		}
 		&__box {
-			.four{
+			.four {
 				background-position: top;
 			}
 			&__text {
@@ -476,20 +477,18 @@ body {
 					font-size: 1.5rem;
 				}
 			}
-			.two{
-				background-size:cover;
+			.two {
+				background-size: cover;
 				background-repeat: no-repeat;
 			}
-			.three{
-				background-size:cover;
-				
+			.three {
+				background-size: cover;
 			}
-			
 		}
 	}
 }
-@media(min-width: 1300px){
-	.five{
+@media (min-width: 1300px) {
+	.five {
 		background-position: top;
 	}
 }

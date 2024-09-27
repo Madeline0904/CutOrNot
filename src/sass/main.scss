@@ -663,11 +663,11 @@ i .fa-solid,
 	display: block;
 }
 
-// .reviews{
-// 	background-image: url('../img/salon.jpeg');
-// 	background-size: cover;
-// 	background-repeat: no-repeat;
-// }
+.pswp-gallery {
+	text-align: center;
+}
+
+//gallery
 
 //media
 @media (max-width: 390px) {
@@ -1008,6 +1008,9 @@ i .fa-solid,
 			}
 		}
 	}
+	.reviews {
+		padding: 350px;
+	}
 	.swiper-slide-box {
 		p {
 			line-height: 29px;
@@ -1035,7 +1038,6 @@ i .fa-solid,
 }
 
 @media (min-width: 1200px) {
-
 	.navbar {
 		&__container {
 			position: absolute;
