@@ -1145,12 +1145,6 @@ i .fa-solid,
   }
 }
 @media (min-width: 1200px) {
-  #portfolio-nav {
-    height: 30%;
-  }
-  #nav-box-portfolio {
-    background-color: #044a42;
-  }
   .navbar__container {
     position: absolute;
     top: 1.5em;
