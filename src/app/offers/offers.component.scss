@@ -27,23 +27,23 @@
       background-size: cover;
     }
     .one {
-      background-image: url("./assets/img/cutting.jpg");
+      background-image: url("/assets/img/cutting.jpg");
     }
     .two {
-      background-image: url("./assets/img/color.jpg");
+      background-image: url("/assets/img/color.jpg");
       background-position: top;
     }
     .three {
-      background-image: url("./assets/img/care.jpg");
+      background-image: url("/assets/img/care.jpg");
     }
     .four {
-      background-image: url("./assets/img/modeling.jpg");
+      background-image: url("/assets/img/modeling.jpg");
     }
     .five {
-      background-image: url("./assets/img/weeding.jpg");
+      background-image: url("/assets/img/weeding.jpg");
     }
     .six {
-      background-image: url("./assets/img/cares.jpg");
+      background-image: url("/assets/img/cares.jpg");
     }
 
     &__text {
@@ -160,16 +160,16 @@
         height: 600px;
       }
       .two {
-        background-image: url("./assets/img/color_small.jpg");
+        background-image: url("/assets/img/color_small.jpg");
       }
       .three {
-        background-image: url("./assets/img/care_small.jpg");
+        background-image: url("/assets/img/care_small.jpg");
       }
       .four {
-        background-image: url("./assets/img/modeling_small.jpg");
+        background-image: url("/assets/img/modeling_small.jpg");
       }
       .five {
-        background-image: url("./assets/img/weeding.jpg");
+        background-image: url("/assets/img/weeding.jpg");
       }
       &__text {
         &-title {
@@ -197,7 +197,7 @@
   }
   .four {
     background-position: center;
-    background-image: url("./assets/img/modeling_small.jpg");
+    background-image: url("/assets/img/modeling_small.jpg");
   }
 }
 @media (min-width: 576px) {
@@ -212,16 +212,16 @@
     }
     &__box {
       .two {
-        background-image: url("./assets/img/color.jpg");
+        background-image: url("/assets/img/color.jpg");
       }
       .three {
-        background-image: url("./assets/img/care_small.jpg");
+        background-image: url("/assets/img/care_small.jpg");
       }
       .four {
-        background-image: url("./assets/img/modeling_small.jpg");
+        background-image: url("/assets/img/modeling_small.jpg");
       }
       .five {
-        background-image: url("./assets/img/weeding.jpg");
+        background-image: url("/assets/img/weeding.jpg");
       }
       .five-img {
         width: 100%;
