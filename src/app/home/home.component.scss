@@ -21,10 +21,10 @@
     position: relative;
     &-main {
       position: relative;
-      margin-top: 2em;
+      margin-top: 3em;
       border-radius: 50%;
-      width: 250px;
-      height: 250px;
+      width: 200px;
+      height: 200px;
       border: 4.5px solid $mainColor;
     }
     &-main-big {
@@ -55,10 +55,10 @@
       font-weight: 700;
     }
     &-img {
-      margin: 0 auto;
+      margin: 10px auto;
       border-radius: 50%;
-      width: 300px;
-      height: 300px;
+      width: 150px;
+      height: 150px;
     }
   }
   &__button-box {
@@ -157,16 +157,22 @@
   }
 }
 
-// media
 
 @media (min-width: 370px) {
   .hero {
+    &__img{
+      &-main{
+        margin-top: 2em;
+        height: 200px;
+        width: 200px;
+      }
+    }
     &__title {
       font-size: 3rem;
       &-img {
-        height: 200px;
-        width: 200px;
-       
+        margin: 10px auto;  
+        height: 150px;
+        width: 150px;
       }
       &-cd {
         &-name {
@@ -175,6 +181,47 @@
       }
     }
   }
+}
+@media (min-width: 390px) {
+  .hero {
+    &__img{
+      &-main{
+        margin-top: 6em;
+        height: 250px;
+        width: 250px;
+      }
+    }
+    &__title {
+      font-size: 3rem;
+      &-img {
+        margin: 1em auto;  
+        height: 200px;
+        width: 200px;
+      }
+      &-cd {
+        &-name {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media(min-width:400px){
+.hero{
+  &__img{
+    &-main{
+      margin-top: 7em;
+      height: 250px;
+      width: 250px;
+    }
+  }
+  &__title{
+    &-img{
+      margin: 26px auto;
+    }
+  }
+}
 }
 @media (min-width: 500px) {
   .hero {
