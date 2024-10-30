@@ -27,6 +27,13 @@
   display: inline-block;
   padding: 25px;
   background-color: $mainColor;
+  .lightbox .lightbox-img img{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: auto;
+  }
   .gallery {
     margin-top:6em ;
     line-height: 0;
@@ -104,7 +111,7 @@
       right: 0;
     }
     .icon-lightbox-carusel {
-      color: $secondColor;
+      color: $mainColor;
       opacity: 0.5;
       transition: all 0.15s ease;
     }
