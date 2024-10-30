@@ -89,7 +89,7 @@
         background-image: url("../../assets/img/before7.png");
       }
       &:hover .cards__card-after,
-      &:active .cards__card-after {
+      &:active .cards__card-after{
         transform: rotate(0);
         opacity: 0;
         animation: up 0.8s;
@@ -98,6 +98,9 @@
       &:active .cards__card-before {
         animation: down 0.8s;
       }
+    }
+    .moreBtn{
+      height: 100%;
     }
   }
 }

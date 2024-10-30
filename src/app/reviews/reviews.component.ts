@@ -1,6 +1,6 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
 import { register } from 'swiper/element/bundle';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination, EffectCube } from 'swiper/modules';
 
 register();
 @Component({
@@ -17,7 +17,7 @@ export class ReviewsComponent implements OnInit {
     if (!swiperEl) return;
 
     const params = {
-      modules: [Navigation, Pagination],
+      modules: [Navigation, Pagination, EffectCube],
       injectStylesUrls: ['./assets/swiper.css'],
     };
 
