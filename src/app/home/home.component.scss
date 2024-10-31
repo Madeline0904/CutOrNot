@@ -156,13 +156,13 @@
     }
   }
 }
-
+//media
 
 @media (min-width: 370px) {
   .hero {
     &__img{
       &-main{
-        margin-top: 2em;
+        margin-top: 1em;
         height: 200px;
         width: 200px;
       }
@@ -171,12 +171,21 @@
       font-size: 3rem;
       &-img {
         margin: 10px auto;  
-        height: 150px;
-        width: 150px;
+        height: 100px;
+        width: 100px;
       }
       &-cd {
         &-name {
           display: none;
+        }
+      }
+    }
+    &__button{
+      &-box{
+        &-two{
+          &-signup{
+            margin-top: 0;
+          }
         }
       }
     }
