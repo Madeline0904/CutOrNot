@@ -2,7 +2,7 @@
 
 .portfolio {
   background-color: $mainColor;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .portfolio-title {
   
@@ -124,8 +124,9 @@
   .portfolio-title {
     &-main{
       display: block;
+      padding-top: 36px;
       font-size: 12.5rem;
-      height: 114px;
+      height: 150px;
   
     }
     
@@ -135,8 +136,9 @@
 @media (min-width: 992px) {
   .portfolio-title {
     &-main{
+      padding-top: 42px;
       font-size: 16rem;
-      height: 146px;  
+      height: 187px;  
     }
     
   }
@@ -159,7 +161,7 @@
   .portfolio-title {
     &-main{
       font-size: 20rem;
-      height: 182px;
+      height: 222px;
     }
     
   }

@@ -9,9 +9,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "e2e": "ng e2e"
-    
-    
+    "e2e": "ng e2e",
+    "deploy": "ng deploy --base-href=https://madeline0904.github.io/CutOrNot/"
   },
   "private": true,
   "dependencies": {
@@ -52,5 +51,4 @@
     "ts-node": "~10.9.0",
     "typescript": "~5.4.5"
   }
- 
 }
