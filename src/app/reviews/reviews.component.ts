@@ -1,6 +1,6 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
+import Swiper from 'swiper';
 import { register } from 'swiper/element/bundle';
-import { Navigation, Pagination, EffectCube } from 'swiper/modules';
 
 register();
 @Component({
@@ -13,16 +13,28 @@ register();
 })
 export class ReviewsComponent implements OnInit {
   ngOnInit() {
-    const swiperEl = document.querySelector('swiper-container');
-    if (!swiperEl) return;
-
-    const params = {
-      modules: [Navigation, Pagination, EffectCube],
-      injectStylesUrls: ['./assets/swiper.css'],
-    };
-
-    Object.assign(swiperEl, params);
-
-    swiperEl.initialize();
+    var swiper = new Swiper('.mySwiper', {
+      effect: 'cube',
+      autoplay: { delay: 5000 },
+      grabCursor: true,
+      cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      keyboard: {
+        enabled: true,
+      },
+      mousewheel: true,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
   }
 }

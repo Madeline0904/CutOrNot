@@ -40,11 +40,13 @@
 }
 
 .swiper-button-next {
-  right: var(--swiper-navigation-sides-offset, -36px);
+  right: var(--swiper-navigation-sides-offset, 2px);
 }
+
 .swiper-button-prev {
-  left: var(--swiper-navigation-sides-offset, -36px);
+  left: var(--swiper-navigation-sides-offset, 2px);
 }
+
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
@@ -98,23 +100,23 @@
     margin-top: 5em;
     margin-bottom: 1em;
   }
-
-  .swiper-button-next {
-    right: var(--swiper-navigation-sides-offset, -72px);
-    --swiper-navigation-size: 24px;
-  }
-  .swiper-button-prev {
-    left: var(--swiper-navigation-sides-offset, -72px);
-  }
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal,
   .swiper-pagination-custom,
   .swiper-pagination-fraction {
     display: none;
   }
-}
 
+  .swiper-button-prev,
+  .swiper-button-next {
+    --swiper-navigation-size: 24px;
+  }
+}
 @media (min-width: 768px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    --swiper-navigation-size: 44px;
+  }
   .reviews {
     background-image: url("../../assets/img/4.jpg");
     background-size: cover;
@@ -160,12 +162,6 @@
   :host {
     --swiper-navigation-size: 24px;
   }
-  .swiper-button-next {
-    right: var(--swiper-navigation-sides-offset, -274px);
-  }
-  .swiper-button-prev {
-    left: var(--swiper-navigation-sides-offset, -274px);
-  }
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal,
   .swiper-pagination-custom,
@@ -192,11 +188,5 @@
   }
   :root {
     --swiper-navigation-size: 44px;
-  }
-  .swiper-button-next {
-    right: var(--swiper-navigation-sides-offset, -350px);
-  }
-  .swiper-button-prev {
-    left: var(--swiper-navigation-sides-offset, -350px);
   }
 }
