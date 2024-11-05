@@ -10,6 +10,7 @@
     font-size: 24.8rem;
     letter-spacing: 2px;
     color: rgba(57, 65, 60, 0.559);
+    overflow: hidden;
   }
 }
 :host {
@@ -32,7 +33,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 100%;
+    height: auto;
+    max-height: 100%;
   }
   .gallery {
     margin-top: 6em;
@@ -127,7 +129,7 @@
     }
     .lightbox-img img {
       width: 100%;
-      height: 100%;
+      
     }
   }
 }
@@ -193,6 +195,13 @@
     &__main {
       margin-bottom: -51px;
       font-size: 21.8rem;
+    }
+  }
+}
+@media screen and (min-width: 1000px){
+  .gallery-lightbox-container{
+    .lightbox .lightbox-img img{
+      height: 100%;
     }
   }
 }
