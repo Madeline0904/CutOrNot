@@ -88,22 +88,32 @@
       .before-seven-img {
         background-image: url("../../assets/img/before7.png");
       }
-      &:hover .cards__card-after,
-      &:active .cards__card-after{
-        transform: rotate(0);
-        opacity: 0;
-        animation: up 0.8s;
-      }
-      &:hover .cards__card-before,
-      &:active .cards__card-before {
-        animation: down 0.8s;
-      }
+      // &:hover .cards__card-after,
+      // &:active .cards__card-after{
+      //   transform: rotate(0);
+      //   opacity: 0;
+      //   animation: up 0.8s;
+      // }
+      // &:hover .cards__card-before,
+      // &:active .cards__card-before {
+      //   animation: down 0.8s;
+      // }
     }
     .moreBtn{
       height: 100%;
     }
   }
 }
+
+.clickedAfter{
+  transform: rotate(0);
+  opacity: 0;
+  animation: up 0.8s;
+}
+.clickedBefore{
+  animation: down 0.8s;
+}
+
 @media (max-width: 576px) {
   .portfolio-title {
     &-main{

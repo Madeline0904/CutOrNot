@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-portfolio',
   standalone: true,
@@ -7,4 +8,16 @@ import { Component } from '@angular/core';
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss',
 })
-export class PortfolioComponent {}
+export class PortfolioComponent {
+protected activeAfter= true
+
+
+clickedImg(event:any){
+   const cardAfter=event.target
+cardAfter?.classList.toggle('clickedAfter')
+}
+onclickedImg(event:any){
+  const cardBefore=event.target
+  cardBefore?.classList.toggle('clickedBefore')
+}
+}

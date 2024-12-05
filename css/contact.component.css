@@ -1,36 +1,46 @@
 .contact {
   display: flex;
+  flex-direction: column;
   height: 100vh;
   overflow: hidden;
 }
 .contact__container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 150px;
   width: 100%;
 }
 .contact__hero {
-  display: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../assets/img/contact_hero_img.jpg);
+  background-position: center;
+  background-size: cover;
 }
 .contact__box {
   display: flex;
   justify-content: center;
-  align-items: end;
-  margin-top: 7em;
+  align-items: center;
   width: 100%;
-  height: 137px;
-  background-color: #044a42;
-  color: rgba(255, 255, 255, 0.9764705882);
+  height: 95%;
+  background-color: rgba(255, 255, 255, 0.9764705882);
+  color: rgba(5, 5, 5, 0.996);
 }
 .contact__box-number {
+  margin: 2em;
+  padding: 1em;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  height: 150px;
+  width: 400px;
 }
 .contact__box-number-adress, .contact__box-number-phone {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1em;
 }
 .contact__box-number i {
   font-size: 1em;
@@ -42,9 +52,8 @@
   scale: 1.2;
 }
 .contact__box-number .phoneNumber {
-  margin-bottom: 0.5em;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.9764705882);
+  color: rgba(5, 5, 5, 0.996);
   font-size: 1.5rem;
 }
 .contact__box-number .adress {
@@ -54,31 +63,55 @@
 }
 .contact__map {
   text-align: center;
-  height: 760px;
+  height: 100%;
+  width: 100%;
+}
+.contact .adress-link {
+  text-decoration: none;
+  color: rgba(5, 5, 5, 0.996);
 }
 
 .footer {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 27px;
-  background-color: #044a42;
+  align-items: end;
+  height: 50px;
+  width: 100%;
+  height: 5%;
+  margin-bottom: 0;
 }
-.footer .footer-text {
-  font-size: 1.2rem;
+.footer .footer-box {
+  width: 100%;
+}
+.footer .footer-box .footer-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 1em;
+  font-size: 1rem;
+  background-color: #044a42;
+  width: 100%;
+  letter-spacing: 1.5px;
   color: rgba(255, 255, 255, 0.9764705882);
 }
-.footer .footer-text span {
-  text-transform: uppercase;
+.footer .footer-box .footer-text a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9764705882);
+  font-weight: 600;
 }
 
 @media (min-width: 972px) {
   .contact {
     display: flex;
+    flex-direction: row;
+    justify-content: end;
     height: 100vh;
     overflow: hidden;
   }
   .contact__container {
+    height: 100%;
+    margin-top: 0;
     width: 50%;
   }
   .contact__hero {
@@ -94,13 +127,13 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 300px;
+    height: 95%;
     background-color: rgba(255, 255, 255, 0.9764705882);
     color: rgba(5, 5, 5, 0.996);
   }
   .contact__box-number {
     display: flex;
-    justify-content: center;
+    width: 500px;
   }
   .contact__box-number-adress, .contact__box-number-phone {
     display: flex;
@@ -128,8 +161,7 @@
     letter-spacing: 1px;
     font-size: 2rem;
   }
-  .contact__map {
-    text-align: center;
-    height: 500px;
+  .contact .footer .footer-box .footer-text {
+    font-size: 1.2rem;
   }
 }/*# sourceMappingURL=contact.component.css.map */
