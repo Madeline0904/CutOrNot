@@ -10,7 +10,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "e2e": "ng e2e",
-    "deploy": "ng deploy --base-href=https://cut-or-not.pl/"
+    "deploy": "ng deploy --base-href=https://cut-or-not.pl/ --cname=cut-or-not.pl"
   },
   "private": true,
   "dependencies": {
