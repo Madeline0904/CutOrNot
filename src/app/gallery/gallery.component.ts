@@ -1,8 +1,7 @@
-import { Component, Input, NgModule, OnInit } from '@angular/core';
-import { AppComponent } from '../app.component';
-import { CommonModule, NgFor } from '@angular/common';
-import { NavigationStart, Router, RouterModule } from '@angular/router';
-import { animate, animation, style, transition, trigger, AnimationEvent } from '@angular/animations';
+import { Component, Input, OnInit } from '@angular/core';
+import { CommonModule} from '@angular/common';
+import {  RouterModule } from '@angular/router';
+import { animate, style, transition, trigger, AnimationEvent } from '@angular/animations';
 
 
 interface Item {
@@ -14,7 +13,7 @@ interface Item {
 @Component({
   selector: 'app-gallery',
   standalone: true,
-  imports: [CommonModule, AppComponent, RouterModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './gallery.component.html',
   styleUrl: './gallery.component.scss',
   animations:[
@@ -83,6 +82,11 @@ export class GalleryComponent implements OnInit {
     },
     {
       imageSrc: "./assets/img/dyp4.jpg",
+      imageAlt:  "Certyfikat ukończenia szkolenia Farba rozjaśniająca prowadzonego przez Katarzynę Złamaniec",
+      imgHorizontal:true
+    },
+    {
+      imageSrc: "./assets/img/dyp5.jpg",
       imageAlt:  "Certyfikat ukończenia szkolenia Farba rozjaśniająca prowadzonego przez Katarzynę Złamaniec",
       imgHorizontal:true
     },
