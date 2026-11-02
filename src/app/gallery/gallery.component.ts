@@ -66,11 +66,7 @@ export class GalleryComponent implements OnInit {
       imgHorizontal:true
     },
    
-    {
-      imageSrc: "./assets/img/dyp2.jpeg",
-      imageAlt:  "Dyplom za zajęcia III miejsca w plebiscycie Mistrzowie Urody w kategorii Fryzjer Roku w województwie podkarpackim",
-      imgHorizontal:false
-    },
+   
     {
       imageSrc: "./assets/img/dy22.jpeg",
       imageAlt:  "Dyplom za zajęcia I miejsca w plebiscycie Mistrzowie Urody w kategorii Fryzjer Roku w powiecie rzeszowskim",
@@ -79,6 +75,11 @@ export class GalleryComponent implements OnInit {
     {
       imageSrc: "./assets/img/dyp3.jpeg",
       imageAlt:  "Dyplom ukończenia szkolenia BaBylissPro",
+      imgHorizontal:false
+    },
+     {
+      imageSrc: "./assets/img/dyp2.jpeg",
+      imageAlt:  "Dyplom za zajęcia III miejsca w plebiscycie Mistrzowie Urody w kategorii Fryzjer Roku w województwie podkarpackim",
       imgHorizontal:false
     },
     {
