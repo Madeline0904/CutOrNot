@@ -60,11 +60,12 @@ export class GalleryComponent implements OnInit {
       imageAlt:  "Certyfikat ukończenia szkolenia z koloryzacji 'Świat kolorów Infiniti'",
       imgHorizontal:true
     },
-    {
-      imageSrc: "./assets/img/dyp1.jpeg",
-      imageAlt:  "Dyplom przyjaciela dzieci",
-      imgHorizontal:false
+     {
+      imageSrc: "./assets/img/dyp9.jpg",
+      imageAlt:  "Certyfikat ukończenia szkolenia Rozjaśnianie i tonowanie",
+      imgHorizontal:true
     },
+   
     {
       imageSrc: "./assets/img/dyp2.jpeg",
       imageAlt:  "Dyplom za zajęcia III miejsca w plebiscycie Mistrzowie Urody w kategorii Fryzjer Roku w województwie podkarpackim",
@@ -90,6 +91,27 @@ export class GalleryComponent implements OnInit {
       imageAlt:  "Certyfikat ukończenia szkolenia Farba rozjaśniająca prowadzonego przez Katarzynę Złamaniec",
       imgHorizontal:true
     },
+        {
+      imageSrc: "./assets/img/dyp6.jpg",
+      imageAlt:  "Certyfikat Trendy 2026",
+      imgHorizontal:true
+    },
+        {
+      imageSrc: "./assets/img/dyp7.jpg",
+      imageAlt:  "Podziękowanie za spotkanie w Przedszkolu Publicznym w Wólce Podleśnej",
+      imgHorizontal:true
+    },
+        {
+      imageSrc: "./assets/img/dyp8.jpg",
+      imageAlt:  "Podziękowania od Dyrekcji i Grona Pedagogicznego Szkoły Podstawowej w Wólce Podleśnej",
+      imgHorizontal:true
+    },
+     {
+      imageSrc: "./assets/img/dyp1.jpeg",
+      imageAlt:  "Dyplom przyjaciela dzieci",
+      imgHorizontal:false
+    },
+       
   ];
   @Input() 
   showCount=true;
