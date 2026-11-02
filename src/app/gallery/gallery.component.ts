@@ -65,13 +65,13 @@ export class GalleryComponent implements OnInit {
       imageAlt:  "Certyfikat ukończenia szkolenia Rozjaśnianie i tonowanie",
       imgHorizontal:true
     },
-   
-   
-    {
-      imageSrc: "./assets/img/dy22.jpeg",
-      imageAlt:  "Dyplom za zajęcia I miejsca w plebiscycie Mistrzowie Urody w kategorii Fryzjer Roku w powiecie rzeszowskim",
-      imgHorizontal:false
+       {
+      imageSrc: "./assets/img/dyp7.jpg",
+      imageAlt:  "Podziękowanie za spotkanie w Przedszkolu Publicznym w Wólce Podleśnej",
+      imgHorizontal:true
     },
+   
+   
     {
       imageSrc: "./assets/img/dyp3.jpeg",
       imageAlt:  "Dyplom ukończenia szkolenia BaBylissPro",
@@ -97,11 +97,12 @@ export class GalleryComponent implements OnInit {
       imageAlt:  "Certyfikat Trendy 2026",
       imgHorizontal:true
     },
-        {
-      imageSrc: "./assets/img/dyp7.jpg",
-      imageAlt:  "Podziękowanie za spotkanie w Przedszkolu Publicznym w Wólce Podleśnej",
-      imgHorizontal:true
+     {
+      imageSrc: "./assets/img/dy22.jpeg",
+      imageAlt:  "Dyplom za zajęcia I miejsca w plebiscycie Mistrzowie Urody w kategorii Fryzjer Roku w powiecie rzeszowskim",
+      imgHorizontal:false
     },
+    
         {
       imageSrc: "./assets/img/dyp8.jpg",
       imageAlt:  "Podziękowania od Dyrekcji i Grona Pedagogicznego Szkoły Podstawowej w Wólce Podleśnej",
